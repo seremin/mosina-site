@@ -1,1 +1,157 @@
-placeholder
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мосина Софья Олеговна – Репетитор начальных классов</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffffff, #fef6e4, #d0f0e0);
+      color: #2c3e50;
+    }
+    header {
+      background-color: #4a90e2;
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      color: #34495e;
+      font-weight: bold;
+    }
+    .review {
+      background-color: #f6f6f6;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border-left: 5px solid #4a90e2;
+    }
+    .stars {
+      color: gold;
+      font-size: 20px;
+    }
+    .feedback-form {
+      background-color: #fef6e4;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    .feedback-form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    iframe {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.95em;
+      color: #888;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="owl.jpg" alt="Логотип сайта">
+  <h1><b>Мосина Софья Олеговна</b></h1>
+  <p>Репетитор начальных классов и подготовки к школе</p>
+</header>
+
+<main>
+  <section>
+    <h2>Контакты</h2>
+    <p><strong>Телефон:</strong> <a href="tel:+37477151128">+374 77 151128</a></p>
+    <p><strong>Адрес:</strong> Ереван, ул. Назарета-Суреняна 11Б</p>
+  </section>
+
+  <section>
+    <h2>Как добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/?ll=44.528087%2C40.202967&z=17&l=map"
+            width="100%" height="400" frameborder="0"></iframe>
+  </section>
+
+  <section>
+    <h2>Записаться на занятие</h2>
+    <form class="feedback-form" onsubmit="sendToWhatsApp(); return false;">
+      <input type="text" id="name" placeholder="Ваше имя" required autofocus>
+      <input type="text" id="child" placeholder="Возраст ребёнка" required>
+      <textarea id="message" placeholder="Цель занятий..." required></textarea>
+      <button type="submit">Отправить в WhatsApp</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Отзывы</h2>
+
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Ольга Николаевна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Марина Сергеевна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Наталья Владимировна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Светлана Игоревна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Елена Александровна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Татьяна Петровна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Валентина Георгиевна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Людмила Аркадьевна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Инна Романовна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+    <div class="review"><div class="stars">★★★★★</div><p><strong>Вероника Павловна:</strong> Очень благодарны Софье Олеговне за внимание, терпение и профессионализм. Наш ребёнок стал увереннее, повысилась успеваемость!</p></div>
+
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Мосина Софья Олеговна
+</footer>
+
+<script>
+function sendToWhatsApp() {
+  const name = document.getElementById("name").value;
+  const child = document.getElementById("child").value;
+  const msg = document.getElementById("message").value;
+  const text = `Здравствуйте! Меня зовут ${name}. Моему ребёнку ${child} лет. ${msg}`;
+  const url = "https://wa.me/79097730699?text=" + encodeURIComponent(text);
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
+
