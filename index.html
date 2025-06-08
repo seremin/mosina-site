@@ -100,7 +100,7 @@
     <h1>Мосина Софья Олеговна</h1>
     <p>Репетитор начальных классов и подготовки к школе</p>
     <div class="messengers">
-      <a class="tg" href="https://t.me/username" target="_blank">Telegram</a>
+      <a class="tg" href="https://t.me/+79097730699" target="_blank">Telegram</a>
       <a class="wa" href="https://wa.me/79097730699" target="_blank">WhatsApp</a>
     </div>
   </header>
@@ -181,21 +181,32 @@
   </main>
 
   <script>
-    function sendToWhatsApp() {
-      const name = document.getElementById("name").value;
-      const child = document.getElementById("child").value;
-      const msg = document.getElementById("message").value;
-      const text = `Здравствуйте! Меня зовут ${name}. Моему ребёнку ${child} лет. ${msg}`;
-      const url = "https://wa.me/79097730699?text=" + encodeURIComponent(text);
-      window.open(url, "_blank");
-    }
-    function sendReview() {
-      const name = document.getElementById("reviewer").value;
-      const msg = document.getElementById("reviewText").value;
-      const text = `Отзыв от ${name}: ${msg}`;
-      const url = "https://wa.me/79097730699?text=" + encodeURIComponent(text);
-      window.open(url, "_blank");
-    }
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value;
+    const child = document.getElementById("child").value;
+    const msg = document.getElementById("message").value;
+    const text = `Здравствуйте! Меня зовут ${name}. Моему ребёнку ${child} лет. ${msg}`;
+    const url = "https://wa.me/79097730699?text=" + encodeURIComponent(text);
+    window.open(url, "_blank");
+  }
+
+  function sendReview() {
+    const name = document.getElementById("reviewer").value;
+    const msg = document.getElementById("reviewText").value;
+    const text = `Отзыв от ${name}: ${msg}`;
+    const url = "https://wa.me/79097730699?text=" + encodeURIComponent(text);
+    window.open(url, "_blank");
+
+    const newReview = document.createElement("div");
+    newReview.className = "review";
+    newReview.innerHTML = `<div class='stars'>★★★★★</div><p><strong>${name}:</strong> ${msg}</p>`;
+    document.querySelector("section h2 + .review")?.parentNode?.appendChild(newReview);
+
+    document.getElementById("reviewer").value = "";
+    document.getElementById("reviewText").value = "";
+  }
+</script>
+
   </script>
 
   <footer style="text-align:center; padding:20px; font-size:14px; color:#888;">
